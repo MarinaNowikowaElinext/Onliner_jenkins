@@ -1,6 +1,6 @@
 const ShoppingCartPage = require('../pageobjects/shopingCart.page');
 
-describe('Shopping Cart', async () => {
+describe('Shopping Cart', () => {
     it('should verify text on the label', async () => {
         await ShoppingCartPage.open();
         await browser.newWindow('https://catalog.onliner.by/medicalmask');

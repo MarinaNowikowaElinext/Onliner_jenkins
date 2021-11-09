@@ -18,7 +18,7 @@ describe("AQA-10 Verify пылесосы", () => {
     await VacuumClenearsPage.selectGardenGoodsLink(gardenGoodName);
     await VacuumClenearsPage.selectGroupProducts(groupProducts);
 
-    expect(VacuumClenearsPage.validateProductsLoadedCorrectly()).toBeTruthy();
+    await expect(VacuumClenearsPage.validateProductsLoadedCorrectly()).toBeTruthy();
   });
 
   it('Array schould be filterd and quantity products on page and on label "Найдено {quantity} товаров" should be equal', async () => {

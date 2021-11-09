@@ -1,6 +1,6 @@
 const onlinerCleverPage = require('../pageobjects/onlinerclever.page');
 
-describe('Onliner clever', async () => {
+describe('Onliner clever', () => {
     beforeEach(async () => { 
         await onlinerCleverPage.open();
     });

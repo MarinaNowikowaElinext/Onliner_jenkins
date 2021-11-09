@@ -1,6 +1,6 @@
 const HomePage = require('../pageobjects/home-page.page');
 
-describe('Home page', async () => {
+describe('Home page', () => {
     beforeEach(async () => {
         await HomePage.open();
     })

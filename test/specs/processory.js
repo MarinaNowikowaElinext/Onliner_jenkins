@@ -1,6 +1,6 @@
 const ProcessoryPage = require('../pageobjects/processory.page');
 
-describe('Processory page', async () => {
+describe('Processory page', () => {
     it('should redirect to page "Processory"', async () => {
         await ProcessoryPage.open();
         await browser.newWindow('https://catalog.onliner.by/cpu');

@@ -11,7 +11,7 @@ const brandToFilter = ["Xiaomi"];
 const filterByPowerSupply = "Класс";
 const powerSupplyToFilter = "горный";
 
-describe('Electronic transport', async () => {
+describe('Electronic transport', () => {
     it("should open array of products (not empty)", async () => {
         await TransportPage.open();
         await TransportPage.selectCatalog(navigationName);

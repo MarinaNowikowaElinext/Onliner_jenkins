@@ -1,6 +1,6 @@
 const SmartphonesPage = require('../pageobjects/smartphones.page');
 
-describe('Mobile phones', async () => {
+describe('Mobile phones', () => {
     // beforeEach(async () => {
         
     // })

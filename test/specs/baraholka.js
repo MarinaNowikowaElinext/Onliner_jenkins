@@ -1,6 +1,6 @@
 const BaraholkaPage = require('../pageobjects/baraholka.page');
 
-describe('Baraholka', async () => {
+describe('Baraholka', () => {
     beforeEach(async () => {
         await BaraholkaPage.open();
     })
