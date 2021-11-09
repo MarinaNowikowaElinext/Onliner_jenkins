@@ -12,7 +12,7 @@ class IkeaPage extends Page {
   }
 
   get selectOrder() {
-    return $("//*[@id='schema-order']");
+    return $("//div[@id='schema-order']");
   }
 
   get listOfDiaplayedProductsPrices() {

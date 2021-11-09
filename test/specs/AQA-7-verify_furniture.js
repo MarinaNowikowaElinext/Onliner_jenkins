@@ -18,11 +18,11 @@ describe("Verify part of directory (ikea)", () => {
 
   it("should be open empty array and message", async () => {
     await FurniturePage.switchFn(switchTo[1]);
-    await expect(await CatalogPage.messageAfterFilter).toBeDisplayed();
+    await expect(CatalogPage.messageAfterFilter).toBeDisplayed();
   });
 
   it("should be open array of products", async () => {
     await FurniturePage.switchFn(switchTo[0]);
-    await expect(await CatalogPage.messageAfterFilter).not.toBeDisplayed();
+    await expect(CatalogPage.messageAfterFilter).not.toBeDisplayed();
   });
 });

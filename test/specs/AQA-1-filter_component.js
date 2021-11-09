@@ -21,13 +21,13 @@ describe("Verify filter component", () => {
 
   it("should contain empty array", async () => {
     await CatalogPage.markCheckbox(filterByMaterial, materialToFilter);
-    await expect(await CatalogPage.messageAfterFilter).toBeDisplayed();
+    await expect(CatalogPage.messageAfterFilter).toBeDisplayed();
   });
 
   it("should contain empty array", async () => {
     await CatalogPage.markCheckbox(filterByProducer, brandToFilter[0]);
     await CatalogPage.markCheckbox(filterByProducer, brandToFilter[1]);
     await CatalogPage.markCheckbox(filterBySimcard, simcardToFilter);
-    await expect(await CatalogPage.messageAfterFilter).toBeDisplayed();
+    await expect(CatalogPage.messageAfterFilter).toBeDisplayed();
   });
 });
