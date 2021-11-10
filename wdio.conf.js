@@ -20,7 +20,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-specs: ["./test/specs/**/AQA-3_part_of_directory_ikea.js"],
+specs: ["./test/specs/**/*.js"],
   
   // Patterns to exclude.
   exclude: [
