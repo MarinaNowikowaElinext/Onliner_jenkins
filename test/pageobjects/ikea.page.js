@@ -12,7 +12,7 @@ class IkeaPage extends Page {
   }
 
   get selectOrder() {
-    return $("//div[@id='schema-order']");
+    return $("//div[@id='schema-order']//a[@class='schema-order__link']//span[contains(text(), 'Сначала')]");
   }
 
   get listOfDiaplayedProductsPrices() {

@@ -22,8 +22,7 @@ describe("Verify part of directory (ikea)", () => {
 
   it("should sort array of products by price from cheap to expensive product", async () => {
     const pricesBefore = await IkeaPage.getPrices();
-    await browser.pause(5000);
-    
+   
     await IkeaPage.selectOrder.click();
     await IkeaPage.selectSortValue(sortValueName);
     const pricesAfter = await IkeaPage.getPrices();
